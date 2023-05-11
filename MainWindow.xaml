@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnBack" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Width="35" Height="25"/>
-        <Button x:Name="btnForward" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="50,2,0,0" VerticalAlignment="Top" Width="35" Height="25"/>
-        <Button x:Name="btnOpen" Content="Open" HorizontalAlignment="Right" Margin="0,2,10,0" VerticalAlignment="Top" Width="35" Height="25"/>
+        <Button x:Name="btnBack" Content="&lt;&lt;" Click="btnBack_Click" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Width="35" Height="25"/>
+        <Button x:Name="btnForward" Content="&gt;&gt;" Click="btnForward_Click" HorizontalAlignment="Left" Margin="50,2,0,0" VerticalAlignment="Top" Width="35" Height="25"/>
+        <Button x:Name="btnOpen" Content="Open" Click="btnOpen_Click" HorizontalAlignment="Right" Margin="0,2,10,0" VerticalAlignment="Top" Width="35" Height="25"/>
         <Label Content="Path:" HorizontalAlignment="Left" Margin="95,2,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPath" HorizontalAlignment="Stretch" Margin="135,6,55,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" />
         <WebBrowser x:Name="webBrowser" Margin="0,30,0,0" Source="C:\"/>
