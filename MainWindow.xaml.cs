@@ -24,5 +24,22 @@ namespace Boykisser_explorer
         {
             InitializeComponent();
         }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (webBrowser.CanGoBack)
+                webBrowser.GoBack();
+        }
+
+        private void btnForward_Click(object sender, EventArgs e)
+        {
+            if (webBrowser.CanGoForward)
+                webBrowser.GoForward();
+        }
     }
 }
