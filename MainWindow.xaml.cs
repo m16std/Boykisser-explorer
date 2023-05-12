@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace Boykisser_explorer
 {
@@ -49,5 +50,15 @@ namespace Boykisser_explorer
             if (webBrowser.CanGoForward)
                 webBrowser.GoForward();
         }
+
+        public BindingList<MainWindow> Items { get; set; } = new BindingList<MainWindow>();
+
+        private void ItemsOnListChanged(object sender, ListChangedEventArgs e)
+        {
+            txtPath.Text = webBrowser.Source.ToString();
+        }
+
     }
+
 }
+
