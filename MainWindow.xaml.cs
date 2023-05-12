@@ -27,7 +27,15 @@ namespace Boykisser_explorer
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            webBrowser.Source = new Uri(txtPath.Text);
+            try
+            {
+                webBrowser.Source = new Uri(txtPath.Text);
+            }
+            catch
+            {
+
+            }
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
