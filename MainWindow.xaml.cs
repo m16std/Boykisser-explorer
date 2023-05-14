@@ -16,9 +16,6 @@ using System.ComponentModel;
 
 namespace Boykisser_explorer
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
