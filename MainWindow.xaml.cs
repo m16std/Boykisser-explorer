@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using WindowsInput;
+using WindowsInput.Native;
 
 namespace Boykisser_explorer
 {
@@ -23,7 +25,7 @@ namespace Boykisser_explorer
             InitializeComponent();
         }
 
-        private void btnOpen_Click(object sender, EventArgs e)
+        private void BtnOpen_Click(object sender, EventArgs e)
         {
             try
             {
@@ -36,13 +38,13 @@ namespace Boykisser_explorer
 
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void BtnBack_Click(object sender, EventArgs e)
         {
             if (webBrowser.CanGoBack)
                 webBrowser.GoBack();
         }
 
-        private void btnForward_Click(object sender, EventArgs e)
+        private void BtnForward_Click(object sender, EventArgs e)
         {
             if (webBrowser.CanGoForward)
                 webBrowser.GoForward();
@@ -53,6 +55,33 @@ namespace Boykisser_explorer
         private void ItemsOnListChanged(object sender, ListChangedEventArgs e)
         {
             txtPath.Text = webBrowser.Source.ToString();
+        }
+        private void wbSample_Navigating(object sender, System.Windows.Navigation.NavigatingCancelEventArgs e)
+        {
+            txtPath.Text = e.Uri.OriginalString;
+        }
+
+        InputSimulator sim = new InputSimulator();
+
+        public void BtnCopy(object sender, EventArgs e)
+        {
+            sim.Keyboard.KeyPress(VirtualKeyCode.UP);
+            sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_C);
+        }
+        public void BtnCut(object sender, EventArgs e)
+        {
+            sim.Keyboard.KeyPress(VirtualKeyCode.UP);
+            sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_X);
+        }
+        public void BtnPaste(object sender, EventArgs e)
+        {
+            sim.Keyboard.KeyPress(VirtualKeyCode.UP);
+            sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_V);
+        }
+        public void BtnDelete(object sender, EventArgs e)
+        {
+            sim.Keyboard.KeyPress(VirtualKeyCode.UP);
+            sim.Keyboard.KeyPress(VirtualKeyCode.DELETE);
         }
 
     }

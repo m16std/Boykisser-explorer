@@ -7,10 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnBack" Content="◀" Click="btnBack_Click" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="White" BorderBrush="White" FontSize="16"/>
-        <Button x:Name="btnForward" Content="▶" Click="btnForward_Click" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="White" Foreground="Black" BorderBrush="White" FontSize="16"/>
-        <Button x:Name="btnOpen" Content="Open" Click="btnOpen_Click" HorizontalAlignment="Right" Margin="0,2,10,0" VerticalAlignment="Top" Width="35" Height="25" BorderBrush="White" Background="White"/>
-        <TextBox x:Name="txtPath" Margin="95,6,60,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" />
-        <WebBrowser x:Name="webBrowser" Margin="0,30,0,0" Source="C:\"/>
+
+        <Button x:Name="btnCopy" Click="BtnCopy" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/copy.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPaste" Click="BtnPaste" HorizontalAlignment="Left" Margin="29,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/paste.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCut" Click="BtnCut" HorizontalAlignment="Left" Margin="59,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/cuty.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnDelete" Click="BtnDelete" HorizontalAlignment="Left" Margin="87,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/send-to-trash.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btnBack" Click="BtnBack_Click" HorizontalAlignment="Left" Margin="123,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/free-icon-arrow-right-604032.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnForward" Click="BtnForward_Click" HorizontalAlignment="Left" Margin="149,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/free-icon-arrow-right-6040232.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_Click" HorizontalAlignment="Right" Margin="0,2,10,0" VerticalAlignment="Top" Width="35" Height="25" BorderBrush="White" Background="White"/>
+        <TextBox x:Name="txtPath" Margin="190,6,60,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" />
+        <WebBrowser x:Name="webBrowser" Margin="0,30,0,0" Source="C:\" Navigating="wbSample_Navigating"/>
     </Grid>
 </Window>

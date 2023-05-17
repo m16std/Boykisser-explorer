@@ -50,6 +50,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
+      <HintPath>packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -87,6 +90,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +98,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="free-icon-arrow-right-6040232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="free-icon-arrow-right-604032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="send-to-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cuty.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
