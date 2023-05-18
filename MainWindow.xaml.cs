@@ -83,7 +83,12 @@ namespace Boykisser_explorer
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.KeyPress(VirtualKeyCode.DELETE);
         }
-
+        public void BtnUndo_Click(object sender, EventArgs e)
+        {
+            sim.Keyboard.KeyPress(VirtualKeyCode.UP);
+            sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
+        }
+        
     }
 
 }

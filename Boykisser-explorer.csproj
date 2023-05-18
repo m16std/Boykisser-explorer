@@ -120,5 +120,26 @@
   <ItemGroup>
     <Resource Include="cuty.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-стрелка-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-налево-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вырезать-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-удалить-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вставить-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-скопировать-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вернуть-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

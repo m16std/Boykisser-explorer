@@ -10,37 +10,42 @@
 
         <Button x:Name="btnCopy" Click="BtnCopy" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/copy.png"/>
+                <ImageBrush ImageSource="/icons8-скопировать-90.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPaste" Click="BtnPaste" HorizontalAlignment="Left" Margin="29,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+        <Button x:Name="btnPaste" Click="BtnPaste" HorizontalAlignment="Left" Margin="31,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/paste.png"/>
+                <ImageBrush ImageSource="/icons8-вставить-50.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCut" Click="BtnCut" HorizontalAlignment="Left" Margin="59,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+        <Button x:Name="btnCut" Click="BtnCut" HorizontalAlignment="Left" Margin="63,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/cuty.png"/>
+                <ImageBrush ImageSource="/icons8-вырезать-90.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnDelete" Click="BtnDelete" HorizontalAlignment="Left" Margin="87,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+        <Button x:Name="btnDelete" Click="BtnDelete" HorizontalAlignment="Left" Margin="93,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/send-to-trash.png"/>
+                <ImageBrush ImageSource="/icons8-удалить-90.png"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnBack" Click="BtnBack_Click" HorizontalAlignment="Left" Margin="123,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+        <Button x:Name="btnBack" Click="BtnBack_Click" HorizontalAlignment="Left" Margin="164,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/free-icon-arrow-right-604032.png"/>
+                <ImageBrush ImageSource="/icons8-налево-90.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnForward" Click="BtnForward_Click" HorizontalAlignment="Left" Margin="149,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+        <Button x:Name="btnForward" Click="BtnForward_Click" HorizontalAlignment="Left" Margin="194,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
             <Button.Background>
-                <ImageBrush ImageSource="/free-icon-arrow-right-6040232.png"/>
+                <ImageBrush ImageSource="/icons8-стрелка-90.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnUndo" Click="BtnUndo_Click" HorizontalAlignment="Left" Margin="123,2,0,0" VerticalAlignment="Top" Width="25" Height="25" BorderBrush="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/icons8-вернуть-50.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_Click" HorizontalAlignment="Right" Margin="0,2,10,0" VerticalAlignment="Top" Width="35" Height="25" BorderBrush="White" Background="White"/>
-        <TextBox x:Name="txtPath" Margin="190,6,60,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" />
+        <TextBox x:Name="txtPath" Margin="231,6,60,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" />
         <WebBrowser x:Name="webBrowser" Margin="0,30,0,0" Source="C:\" Navigating="wbSample_Navigating"/>
     </Grid>
 </Window>
