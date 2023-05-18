@@ -100,27 +100,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="free-icon-arrow-right-6040232.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="free-icon-arrow-right-604032.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="copy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="paste.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="cut.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="send-to-trash.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="cuty.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icons8-стрелка-90.png" />
   </ItemGroup>
   <ItemGroup>
