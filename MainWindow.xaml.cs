@@ -50,7 +50,7 @@ namespace Boykisser_explorer
                 webBrowser.GoForward();
         }
 
-        public BindingList<MainWindow> Items { get; set; } = new BindingList<MainWindow>();
+        private BindingList<MainWindow> Items { get; set; } = new BindingList<MainWindow>();
 
         private void ItemsOnListChanged(object sender, ListChangedEventArgs e)
         {
@@ -61,29 +61,29 @@ namespace Boykisser_explorer
             txtPath.Text = e.Uri.OriginalString;
         }
 
-        InputSimulator sim = new InputSimulator();
+        private readonly InputSimulator sim = new InputSimulator();
 
-        public void BtnCopy(object sender, EventArgs e)
+        private void BtnCopy(object sender, EventArgs e)
         {
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_C);
         }
-        public void BtnCut(object sender, EventArgs e)
+        private void BtnCut(object sender, EventArgs e)
         {
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_X);
         }
-        public void BtnPaste(object sender, EventArgs e)
+        private void BtnPaste(object sender, EventArgs e)
         {
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_V);
         }
-        public void BtnDelete(object sender, EventArgs e)
+        private void BtnDelete(object sender, EventArgs e)
         {
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.KeyPress(VirtualKeyCode.DELETE);
         }
-        public void BtnUndo_Click(object sender, EventArgs e)
+        private void BtnUndo_Click(object sender, EventArgs e)
         {
             sim.Keyboard.KeyPress(VirtualKeyCode.UP);
             sim.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
